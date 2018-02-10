@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+/* Mobile First Development */
+.page {
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+header {
+    height: 100vh;
+    width: 100%;
+}
+
+.header-image {
+    background-image: url("../img/ingredients-small.jpg");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    color: #fff;
+    background-color: #ff5252;
+    padding: 20px 0;
+    width: 100%;
+    height: 10%;
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 960px) {
+    .header-image {
+        background-image: url("../img/ingredients-big.jpg");
+        height: 90%;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
