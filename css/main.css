@@ -49,6 +49,11 @@ body {
     padding-left: 15px;
 }
 
+.lists {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
 a {
     color: #fff;
 }
