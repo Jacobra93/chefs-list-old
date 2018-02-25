@@ -14,7 +14,13 @@ body {
 .page {
     display: flex;
     flex-wrap: wrap;
+    min-height: 100vh;
+    flex-direction: column;
 } 
+
+.main-content {
+    flex: 1;
+}
 
 .section {
     display: flex;
@@ -54,16 +60,15 @@ body {
     padding-left: 15px;
 }
 
-a {
+.nav-links {
     color: #fff;
 }
 
-a:link {
-    color: #fff;
+.nav-links:link {
     text-decoration: none;
 }
 
-a:hover {
+.nav-links:hover {
     color: #f3f1f1;
     padding-bottom: 3px;
     border-bottom: 1px solid #fff;
@@ -87,7 +92,6 @@ a:hover {
 .section-container {
     display: flex;
     justify-content: space-around;
-
 }
 
 .info-item {
@@ -136,4 +140,106 @@ a:hover {
     .footer {
         margin-top: 130px;
     }
+}
+
+/* Recipe page */
+
+.recipe-header {
+    display: flex;
+    justify-content: center;
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+    opacity: .8;
+}
+
+.button-container {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 12vh;
+}
+
+.buttons {
+    background-color: #388E3C;
+    /* #4ca54a; */
+    height: 30px;
+    width: 140px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+
+
+.buttons:hover {
+    color: #f3f1f1;
+    transform:translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    border-radius: 5px;
+    transform: translateY(-1px);
+}
+
+.button:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.recipe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    height: 50px;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(50,50,93,.1), 0 0px 10px rgba(0,0,0,.07);
+    margin-bottom: 20px;
+}
+
+.recipe-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%
+}
+
+.recipe-title {
+    margin-left: 15px;
+}
+
+.delete {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.material-icons {
+    opacity: .7;
+}
+
+@media only screen and (min-width: 401px) {
+    .button-container {
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .buttons {
+        margin-left: 10px;
+    }
+
+    .recipe {
+        width: 350px;
+        height: 65px;
+    }
+
+
 }

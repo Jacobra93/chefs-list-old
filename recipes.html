@@ -5,28 +5,89 @@
         <meta name='viewport' content='width=device-width, initial-scale=1'/>
         <title>Recipe Page</title>
         <link rel='stylesheet' href='css\main.css'/>
-        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
-    <body>
-        <div class='page'>
+    <body class='page'>
+        <div class='main-content'>
             <nav class='section nav-container'>
                 <div class='logo'>
                     Logo
                 </div>
                 <div class='links'>
                     <div class='sign-up'>
-                         <a href=''>Recipes</a>
+                         <a class='nav-links' href=''>Recipes</a>
                     </div>
                     <div class='lists'>
-                        <a href=''>Lists</a>
+                        <a class='nav-links' href=''>Lists</a>
                     </div>
                 </div>     
-            </nav> 
-            <footer class='section footer'>
-                    <p>
-                        Handmade by Jacob White &copy 2018
-                    </p>
-            </footer> 
-        </div>      
+            </nav>            
+            <div class='section button-container'>
+                <div class='buttons'>
+                    <a class='button' href=''>Add Recipe</a>
+                </div>
+                <div class='buttons'>
+                    <a class='button' href=''>Add List</a>
+                </div>
+            </div>
+            <header class='recipe-header'>
+                <h1>
+                    Recipes
+                </h1>
+            </header> 
+            <div class='section section-container'>
+                <div class='recipe'>
+                    <div class='recipe-title'>
+                        <p>
+                            Chili
+                        </p>
+                    </div>
+                    <div class='recipe-actions'>
+                        <div class='edit'>
+                            <i class="material-icons">mode_edit</i>
+                        </div>
+                        <div class='delete'>
+                            <i class="material-icons">delete</i>
+                        </div>
+                    </div>
+                </div>
+                <div class='recipe'>
+                        <div class='recipe-title'>
+                            <p>
+                                Chicken Pot Pie
+                            </p>
+                        </div>
+                        <div class='recipe-actions'>
+                            <div class='edit'>
+                                <i class="material-icons">mode_edit</i>
+                            </div>
+                            <div class='delete'>
+                                <i class="material-icons">delete</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='recipe'>
+                            <div class='recipe-title'>
+                                <p>
+                                    Beef Stroganoff
+                                </p>
+                            </div>
+                            <div class='recipe-actions'>
+                                <div class='edit'>
+                                    <i class="material-icons">mode_edit</i>
+                                </div>
+                                <div class='delete'>
+                                    <i class="material-icons">delete</i>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>    
+        <footer class='section footer'>
+            <p>
+                Handmade by Jacob White &copy 2018
+            </p>
+        </footer>       
     </body>
 </html> 
