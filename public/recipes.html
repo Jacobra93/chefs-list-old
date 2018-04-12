@@ -3,7 +3,7 @@
     <head>
         <meta charset='UTF-8'/>
         <meta name='viewport' content='width=device-width, initial-scale=1'/>
-        <title>List Page</title>
+        <title>Recipe Page</title>
         <link rel='stylesheet' href='css\main.css'/>
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet'>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -12,10 +12,9 @@
         <div class='main-content'>
             <nav class='section nav-container'>
                 <div class='logo'>
-                    Logo
                 </div>
                 <div class='links'>
-                    <div>
+                    <div class>
                          <a class='nav-links' href='recipes.html'>Recipes</a>
                     </div>
                     <div class='lists'>
@@ -25,7 +24,7 @@
             </nav>  
             <header class='recipe-header'>
                 <h1>
-                    Lists
+                    Recipes
                 </h1>
             </header>           
             <div class='section button-container'>
@@ -36,11 +35,11 @@
                     <a class='button' href=''>Add List</a>
                 </div>
             </div>
-            <div class='section list-container'>
-                <div class='list'>
+            <div class='section section-container'>
+                <div class='recipe'>
                     <div class='item-title'>
                         <p>
-                            List 1
+                            Chili
                         </p>
                     </div>
                     <div class='actions'>
@@ -52,42 +51,57 @@
                         </div>
                     </div>
                 </div>
-                <div class='list'>
-                    <div class='item-title'>
-                        <p>
-                            List 2
-                        </p>
-                    </div>
-                    <div class='actions'>
-                        <div class='edit'>
-                            <i class="material-icons">mode_edit</i>
+                <div class='recipe'>
+                        <div class='item-title'>
+                            <p>
+                                Chicken Pot Pie
+                            </p>
                         </div>
-                        <div class='delete'>
-                            <i class="material-icons">delete</i>
-                        </div>
-                    </div>
-                </div>
-                <div class='list'>
-                    <div class='item-title'>
-                        <p>
-                            List 3
-                        </p>
-                    </div>
-                    <div class='actions'>
-                        <div class='edit'>
-                            <i class="material-icons">mode_edit</i>
-                        </div>
-                        <div class='delete'>
-                            <i class="material-icons">delete</i>
+                        <div class='actions'>
+                            <div class='edit'>
+                                <i class="material-icons">mode_edit</i>
+                            </div>
+                            <div class='delete'>
+                                <i class="material-icons">delete</i>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>    
-        </div>   
+                    <div class='recipe'>
+                            <div class='item-title'>
+                                <p>
+                                    Beef Stroganoff
+                                </p>
+                            </div>
+                            <div class='actions'>
+                                <div class='edit'>
+                                    <i class="material-icons">mode_edit</i>
+                                </div>
+                                <div class='delete'>
+                                    <i class="material-icons">delete</i>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>    
         <footer class='section footer'>
             <p>
                 Handmade by Jacob White &copy 2018
             </p>
-        </footer>       
+        </footer>   
     </body>
-</html>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAshDdnK_nmB49G3d15ZXQzuhLu0lfpJZM",
+        authDomain: "chef-list.firebaseapp.com",
+        databaseURL: "https://chef-list.firebaseio.com",
+        projectId: "chef-list",
+        storageBucket: "chef-list.appspot.com",
+        messagingSenderId: "653413901786"
+      };
+      firebase.initializeApp(config);
+      // Get a reference to the database service
+      var database = firebase.database();
+    </script>
+</html> 

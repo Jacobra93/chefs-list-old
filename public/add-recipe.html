@@ -12,7 +12,6 @@
         <div class='main-content'>
             <nav class='section nav-container'>
                 <div class='logo'>
-                    Logo
                 </div>
                 <div class='links'>
                     <div>
@@ -29,7 +28,7 @@
                 </h1>
             </header> 
             <div class='section-container'>          
-                <form action='' method='get' class='section recipe-form'>
+                <form action='post' method='get' id='recipe-form' class='section recipe-form'>
                     <div class='form-row'>
                         <label for='recipe-name'>Recipe Name</label>
                         <input id='recipe-name' name='recipe-name' type='text' placeholder='Name' required/>
@@ -76,6 +75,21 @@
             <p>
                 Handmade by Jacob White &copy 2018
             </p>
-        </footer>       
+        </footer> 
     </body>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAshDdnK_nmB49G3d15ZXQzuhLu0lfpJZM",
+        authDomain: "chef-list.firebaseapp.com",
+        databaseURL: "https://chef-list.firebaseio.com",
+        projectId: "chef-list",
+        storageBucket: "chef-list.appspot.com",
+        messagingSenderId: "653413901786"
+      };
+      firebase.initializeApp(config);
+      // Get a reference to the database service
+      var database = firebase.database();
+    </script>
 </html>

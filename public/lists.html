@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'/>
+        <meta name='viewport' content='width=device-width, initial-scale=1'/>
+        <title>List Page</title>
+        <link rel='stylesheet' href='css\main.css'/>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body class='page'>
+        <div class='main-content'>
+            <nav class='section nav-container'>
+                <div class='logo'>
+                </div>
+                <div class='links'>
+                    <div>
+                         <a class='nav-links' href='recipes.html'>Recipes</a>
+                    </div>
+                    <div class='lists'>
+                        <a class='nav-links' href='lists.html'>Lists</a>
+                    </div>
+                </div>     
+            </nav>  
+            <header class='recipe-header'>
+                <h1>
+                    Lists
+                </h1>
+            </header>           
+            <div class='section button-container'>
+                <div class='buttons'>
+                    <a class='button' href='add-recipe.html'>Add Recipe</a>
+                </div>
+                <div class='buttons'>
+                    <a class='button' href=''>Add List</a>
+                </div>
+            </div>
+            <div class='list-container'>
+            <div class='section lists-container'>
+                <div class='list'>
+                    <div class='item-title'>
+                        <p>
+                            List 1
+                        </p>
+                    </div>
+                    <div class='actions'>
+                        <div class='edit'>
+                            <i class="material-icons">mode_edit</i>
+                        </div>
+                        <div class='delete'>
+                            <i class="material-icons">delete</i>
+                        </div>
+                    </div>
+                </div>
+                <div class='list'>
+                    <div class='item-title'>
+                        <p>
+                            List 2
+                        </p>
+                    </div>
+                    <div class='actions'>
+                        <div class='edit'>
+                            <i class="material-icons">mode_edit</i>
+                        </div>
+                        <div class='delete'>
+                            <i class="material-icons">delete</i>
+                        </div>
+                    </div>
+                </div>
+                <div class='list'>
+                    <div class='item-title'>
+                        <p>
+                            List 3
+                        </p>
+                    </div>
+                    <div class='actions'>
+                        <div class='edit'>
+                            <i class="material-icons">mode_edit</i>
+                        </div>
+                        <div class='delete'>
+                            <i class="material-icons">delete</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form action='' method='get' class='section list-form'>
+                <div class='list-text'>
+                    <textarea id='list-textarea' name='list-text-area' placeholder='Chicken 1 lb &#10;Tomatoes 1 &#10;Green beans 1 can'></textarea>
+                </div>
+            </form>
+            </div>
+        </div>   
+        <footer class='section footer'>
+            <p>
+                Handmade by Jacob White &copy 2018
+            </p>
+        </footer>    
+    </body>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAshDdnK_nmB49G3d15ZXQzuhLu0lfpJZM",
+        authDomain: "chef-list.firebaseapp.com",
+        databaseURL: "https://chef-list.firebaseio.com",
+        projectId: "chef-list",
+        storageBucket: "chef-list.appspot.com",
+        messagingSenderId: "653413901786"
+      };
+      firebase.initializeApp(config);
+      // Get a reference to the database service
+      var database = firebase.database();
+    </script>
+</html>
